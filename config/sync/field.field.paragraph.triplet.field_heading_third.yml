@@ -1,0 +1,21 @@
+uuid: 1ded6e7e-059b-4a30-ae63-2b07f42aba7c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_heading_third
+    - paragraphs.paragraphs_type.triplet
+  module:
+    - text
+id: paragraph.triplet.field_heading_third
+field_name: field_heading_third
+entity_type: paragraph
+bundle: triplet
+label: 'Heading Third'
+description: 'Heading for the third item. Appears on the right hand side of the page by default.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

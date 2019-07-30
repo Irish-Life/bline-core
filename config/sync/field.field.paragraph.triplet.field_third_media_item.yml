@@ -1,0 +1,32 @@
+uuid: 4cdc8340-27c6-45b5-9ac5-940d8d9632f5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_third_media_item
+    - media.type.image
+    - media.type.remote_video
+    - media.type.video
+    - paragraphs.paragraphs_type.triplet
+id: paragraph.triplet.field_third_media_item
+field_name: field_third_media_item
+entity_type: paragraph
+bundle: triplet
+label: 'Third Media Item'
+description: 'Third media item. Appears on the right side of the page by default.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+      remote_video: remote_video
+      video: video
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: image
+field_type: entity_reference

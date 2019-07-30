@@ -1,0 +1,57 @@
+uuid: e37acd22-b509-42bf-94f1-a97f3b5c2ddc
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.section.field_section_background_colour
+    - field.field.paragraph.section.field_section_body_text
+    - field.field.paragraph.section.field_section_heading
+    - field.field.paragraph.section.field_section_image
+    - field.field.paragraph.section.field_section_sub_heading
+    - paragraphs.paragraphs_type.section
+  module:
+    - options
+    - text
+id: paragraph.section.default
+targetEntityType: paragraph
+bundle: section
+mode: default
+content:
+  field_section_background_colour:
+    weight: 4
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+  field_section_body_text:
+    weight: 2
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_section_heading:
+    weight: 0
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_section_image:
+    type: entity_reference_entity_view
+    weight: 3
+    label: hidden
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    region: content
+  field_section_sub_heading:
+    weight: 1
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+hidden: {  }

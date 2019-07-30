@@ -1,0 +1,21 @@
+uuid: 85473d4c-cb90-417f-ae14-a2624073fd17
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_heading_first
+    - paragraphs.paragraphs_type.triplet
+  module:
+    - text
+id: paragraph.triplet.field_heading_first
+field_name: field_heading_first
+entity_type: paragraph
+bundle: triplet
+label: 'Heading First'
+description: 'Heading for first item. Appears on the left side of the page by default.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

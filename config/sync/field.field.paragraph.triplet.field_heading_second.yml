@@ -1,0 +1,21 @@
+uuid: 92a94699-4bfa-4aa9-a056-464e99d6c3f4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_heading_second
+    - paragraphs.paragraphs_type.triplet
+  module:
+    - text
+id: paragraph.triplet.field_heading_second
+field_name: field_heading_second
+entity_type: paragraph
+bundle: triplet
+label: 'Heading Second'
+description: 'Heading for the second item. Appears in the centre of the page by default.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

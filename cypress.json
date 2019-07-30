@@ -1,0 +1,11 @@
+{
+  "baseUrl": "http://pages.bline.ie",
+  "projectId": "z178k6",
+  "env": {
+    "baseUrl": "http://pages.bline.ie",
+    "cyAdminUser": "TESTADMIN",
+    "cyAdminPassword": "password",
+    "cyTestArticleUrl": "node/15",
+    "cyTestArticle2Url": "node/16"
+  }
+}

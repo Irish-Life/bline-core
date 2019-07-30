@@ -1,0 +1,21 @@
+uuid: 0ddddf5f-f9ca-46b4-9994-7b0767c1464f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_second_body_text
+    - paragraphs.paragraphs_type.triplet
+  module:
+    - text
+id: paragraph.triplet.field_second_body_text
+field_name: field_second_body_text
+entity_type: paragraph
+bundle: triplet
+label: 'Second Body Text'
+description: 'Body text for the second item. Appears in the center of the page by default.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long
