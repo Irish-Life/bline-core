@@ -41,3 +41,4 @@ web/themes/custom/
 # Ignore editor generated files
 *.code-workspace
 .editorconfig
+/.vscode
