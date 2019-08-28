@@ -30,18 +30,9 @@ steps:
     rootFolderOrFile: '$(system.defaultWorkingDirectory)'
     includeRootFolder: false
     archiveType: zip
-- task: PublishBuildArtifacts@1
 
 - task: PublishBuildArtifacts@1
   displayName: Publish Artifact
   inputs:
     PathtoPublish: $(build.artifactstagingdirectory)
-
-- task: AzureWebApp@1
-  displayName: Azure Web App Deploy
-  inputs:
-    azureSubscription: $(serviceConnectionToAzure)
-    appType: webAppLinux
-    appName: $(appName)
-    package: $(build.artifactstagingdirectory)/**/*.zip
 
