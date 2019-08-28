@@ -1,32 +1,34 @@
 # PHP
+
+# Test and package your PHP project.
+# Add steps that run tests, save build artifacts, deploy, and more:
+# https://docs.microsoft.com/azure/devops/pipelines/languages/php
+
+trigger:
+- master
+
+pool:
+  vmImage: 'ubuntu-latest'
+
+variables:
+  phpVersion: 7.2
+
+steps:
+- script: |
+    sudo update-alternatives --set php /usr/bin/php$(phpVersion)
+    sudo update-alternatives --set phar /usr/bin/phar$(phpVersion)
+    sudo update-alternatives --set phpdbg /usr/bin/phpdbg$(phpVersion)
+    sudo update-alternatives --set php-cgi /usr/bin/php-cgi$(phpVersion)
+    sudo update-alternatives --set phar.phar /usr/bin/phar.phar$(phpVersion)
+    php -version
+  displayName: 'Use PHP version $(phpVersion)'
+
+- script: composer install --no-interaction --prefer-dist
+  displayName: 'composer install'
+
 - task: AzureRmWebAppDeployment@4
   inputs:
     ConnectionType: 'PublishProfile'
     PublishProfilePath: '$(System.DefaultWorkingDirectory)/**/*.pubxml'
     PublishProfilePassword: 'Su2zKBQDdB5lGRq3wAN1vz8lB8mDoRgMhg4DSsrnYWvFRnMn0F5ehprpxE1B'
     packageForLinux: '$(System.DefaultWorkingDirectory)/**/*.zip'
-# Test and package your PHP project.
-# Add steps that run tests, save build artifacts, deploy, and more:
-# https://docs.microsoft.com/azure/devops/pipelines/languages/php
-
-#trigger:
-#- master
-
-#pool:
-#  vmImage: 'ubuntu-latest'
-
-#variables:
-#  phpVersion: 7.2
-
-#steps:
-#- script: |
-#    sudo update-alternatives --set php /usr/bin/php$(phpVersion)
-#    sudo update-alternatives --set phar /usr/bin/phar$(phpVersion)
-#    sudo update-alternatives --set phpdbg /usr/bin/phpdbg$(phpVersion)
-#    sudo update-alternatives --set php-cgi /usr/bin/php-cgi$(phpVersion)
-#    sudo update-alternatives --set phar.phar /usr/bin/phar.phar$(phpVersion)
-#    php -version
-#  displayName: 'Use PHP version $(phpVersion)'
-
-#- script: composer install --no-interaction --prefer-dist
-#  displayName: 'composer install'
