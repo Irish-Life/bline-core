@@ -22,10 +22,11 @@ steps:
     php -version
   displayName: 'Use PHP version $(phpVersion)'
 
-- script: composer install --no-interaction --prefer-dist
-  displayName: 'composer install'
 - script: pwd
   displayName: 'Working directory'
+
+
+
 
 - task: ArchiveFiles@2
   inputs:
