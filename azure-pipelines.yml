@@ -7,7 +7,7 @@ trigger:
 - master
 
 pool:
-  vmImage: 'ubuntu-latest'
+  vmImage: 'macOS-10.13'
 
 variables:
   phpVersion: 7.2
@@ -24,6 +24,8 @@ steps:
 
 - script: composer install --no-interaction --prefer-dist
   displayName: 'composer install'
+- script: pwd
+  displayName: 'Working directory'
 
 - task: ArchiveFiles@2
   inputs:
@@ -35,4 +37,6 @@ steps:
   displayName: Publish Artifact
   inputs:
     PathtoPublish: $(build.artifactstagingdirectory)
+    ArtifactName: 'drop'
+
 
