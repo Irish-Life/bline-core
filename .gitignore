@@ -37,3 +37,8 @@ web/modules/custom/
 
 # Ignore themes
 web/themes/custom/
+
+# Ignore editor generated files
+*.code-workspace
+.editorconfig
+/.vscode
