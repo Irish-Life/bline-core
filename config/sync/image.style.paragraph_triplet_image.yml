@@ -1,0 +1,15 @@
+uuid: f920a89a-1e6b-4913-8162-eb72ef1ed872
+langcode: en
+status: true
+dependencies: {  }
+name: paragraph_triplet_image
+label: 'Paragraph - Triplet Image (300x300)'
+effects:
+  61a1e5a8-aaff-4425-9e74-a50a46ce1997:
+    uuid: 61a1e5a8-aaff-4425-9e74-a50a46ce1997
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 300
+      height: 300
+      anchor: center-center

@@ -5,6 +5,8 @@
     "baseUrl": "http://pages.bline.ie",
     "cyAdminUser": "TESTADMIN",
     "cyAdminPassword": "password",
+    "cyCreatorUser": "TESTCREATOR",
+    "cyCreatorPassword": "password",
     "cyTestArticleUrl": "node/15",
     "cyTestArticle2Url": "node/16"
   }

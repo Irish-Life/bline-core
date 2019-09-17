@@ -15,9 +15,11 @@ dependencies:
     - field.field.paragraph.triplet.field_third_body_text
     - field.field.paragraph.triplet.field_third_cta_button
     - field.field.paragraph.triplet.field_third_media_item
+    - image.style.paragraph_triplet_image
     - paragraphs.paragraphs_type.triplet
   module:
     - link
+    - media
     - text
 id: paragraph.triplet.default
 targetEntityType: paragraph
@@ -44,12 +46,12 @@ content:
     type: link
     region: content
   field_first_media_item:
-    type: entity_reference_entity_view
+    type: media_thumbnail
     weight: 2
     label: hidden
     settings:
-      view_mode: default
-      link: false
+      image_style: paragraph_triplet_image
+      image_link: ''
     third_party_settings: {  }
     region: content
   field_heading_first:
@@ -93,12 +95,12 @@ content:
     type: link
     region: content
   field_second_media_item:
-    type: entity_reference_entity_view
+    type: media_thumbnail
     weight: 6
     label: hidden
     settings:
-      view_mode: default
-      link: false
+      image_style: paragraph_triplet_image
+      image_link: ''
     third_party_settings: {  }
     region: content
   field_third_body_text:
@@ -121,12 +123,12 @@ content:
     type: link
     region: content
   field_third_media_item:
-    type: entity_reference_entity_view
+    type: media_thumbnail
     weight: 10
     label: hidden
     settings:
-      view_mode: default
-      link: false
+      image_style: paragraph_triplet_image
+      image_link: ''
     third_party_settings: {  }
     region: content
 hidden: {  }

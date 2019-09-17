@@ -6,6 +6,6 @@
   "scripts": {
     "cy:run": "cypress run",
     "cy:open": "cypress open",
-    "cy:runrecord": "cypress run --record --key f7fa2a72-9467-48fb-8d06-86573a4f3f9d"
+    "cy:runrecord": "cypress run --record --key f7fa2a72-9467-48fb-8d06-86573a4f3f9d --spec 'cypress/integration/tests/creator.js'"
   }
 }

@@ -8,8 +8,10 @@ dependencies:
     - field.field.paragraph.section.field_section_heading
     - field.field.paragraph.section.field_section_image
     - field.field.paragraph.section.field_section_sub_heading
+    - image.style.large
     - paragraphs.paragraphs_type.section
   module:
+    - media
     - options
     - text
 id: paragraph.section.default
@@ -39,12 +41,12 @@ content:
     type: text_default
     region: content
   field_section_image:
-    type: entity_reference_entity_view
+    type: media_thumbnail
     weight: 3
     label: hidden
     settings:
-      view_mode: default
-      link: false
+      image_style: large
+      image_link: ''
     third_party_settings: {  }
     region: content
   field_section_sub_heading:

@@ -1,0 +1,31 @@
+uuid: 5f1df29d-af05-40c9-b9f7-95066221da84
+langcode: en
+status: true
+dependencies: {  }
+id: approver
+label: Approver
+weight: 5
+is_admin: null
+permissions:
+  - 'access administration pages'
+  - 'access content'
+  - 'access content overview'
+  - 'access toolbar'
+  - 'access tour'
+  - 'revert article revisions'
+  - 'revert landing_page revisions'
+  - 'revert page revisions'
+  - 'use landing_page_approval transition approved'
+  - 'use landing_page_approval transition rejected'
+  - 'view any unpublished content'
+  - 'view article revisions'
+  - 'view landing_page revisions'
+  - 'view latest version'
+  - 'view media'
+  - 'view own unpublished content'
+  - 'view own unpublished media'
+  - 'view page revisions'
+  - 'view paragraph content masthead'
+  - 'view paragraph content section'
+  - 'view paragraph content triplet'
+  - 'view the administration theme'
