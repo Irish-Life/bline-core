@@ -1,5 +1,5 @@
 # Composer template for Drupal projects
-# Testing devops build
+# Testing devops build - 27/09/19
 
 [![Build Status](https://travis-ci.org/drupal-composer/drupal-project.svg?branch=8.x)](https://travis-ci.org/drupal-composer/drupal-project)
 
