@@ -1,46 +1,30 @@
-# Use the drupal image to build
-FROM drupal:8.7.7-fpm
-# FROM composer
+ARG  BASE_IMAGE_TAG=7.2-apache
+FROM drupaldocker/php:${BASE_IMAGE_TAG}
 
+# Install CLI dependencies
+RUN apt-get update && apt-get install -y mariadb-client curl git vim \
+	&& apt-get clean
 
-# Set working directory
-WORKDIR /var/www/html
+# Install Composer
+RUN echo "allow_url_fopen = On" > /usr/local/etc/php/conf.d/drupal-01.ini
+RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/bin -- --filename=composer
 
-# Copy the current directory into the container
+# Create directories for Drupal
+RUN mkdir -p /tmp/drupal && chown www-data:www-data /tmp/drupal
+RUN chown www-data:www-data /var/www
+WORKDIR /var/www/drupal
 
-COPY . /var/www/html
+# Config
+ENV DOCROOT=/var/www/drupal/web
+ADD apache.conf /etc/apache2/sites-enabled/000-default.conf
+ADD bashrc.sh /var/www/.bashrc
+ADD drushrc.php /etc/drush/drushrc.php
+COPY . ./
 
+# Install Node
+RUN apt-get install -y curl \
+  && curl -sL https://deb.nodesource.com/setup_9.x | bash - \
+  && apt-get install -y nodejs \
+  && curl -L https://www.npmjs.com/install.sh | sh
 
-
-# Update and install php packages
-#RUN apt-get update
-#apt-get install libpng-dev && \
-#apt-get install gd
-
-# FROM php:7.2-fpm
-# RUN apt-get update && apt-get install -y \
-#         libfreetype6-dev \
-#         libjpeg62-turbo-dev \
-#         libpng-dev \
-#     && docker-php-ext-install -j$(nproc) iconv \
-#     && docker-php-ext-configure gd --with-freetype-dir=/usr/include/ --with-jpeg-dir=/usr/include/ \
-#     && docker-php-ext-install -j$(nproc) gd
-
-
-# WORKDIR /var/www/html
-# FROM composer
-# WORKDIR /var/www/html
-COPY --from=composer /usr/bin/composer /usr/bin/composer
-# COPY --from=0 /var/www/html .
-RUN cd /var/www/html && \
-ls -al && \
-lsb_release -a && \
-composer install && \
-cd web/themes/custom/bline && \
-vendor/bin/drush -v && \
-npm install
-
-# Expose port 80
-EXPOSE 80
-
-
+#CMD ["bash", "start.sh"]
