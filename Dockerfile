@@ -19,6 +19,7 @@ ENV DOCROOT=/var/www/drupal/web
 ADD apache.conf /etc/apache2/sites-enabled/000-default.conf
 ADD bashrc.sh /var/www/.bashrc
 ADD drushrc.php /etc/drush/drushrc.php
+COPY . ./
 
 # Install Node
 RUN apt-get install -y curl \
@@ -26,4 +27,4 @@ RUN apt-get install -y curl \
   && apt-get install -y nodejs \
   && curl -L https://www.npmjs.com/install.sh | sh
 
-CMD ["bash", "start.sh"]
+#CMD ["bash", "start.sh"]
