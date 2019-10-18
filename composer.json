@@ -22,7 +22,7 @@
         "drupal-composer/drupal-scaffold": "^2.5",
         "drupal/admin_toolbar": "^1.27",
         "drupal/console": "^1.9",
-        "drupal/core": "8.7.5",
+        "drupal/core": "8.7.8",
         "drupal/devel": "^2.1",
         "drupal/duplicate_role": "^1.0",
         "drupal/imagemagick": "^2.5",

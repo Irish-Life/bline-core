@@ -7,7 +7,7 @@
     "cyAdminPassword": "password",
     "cyCreatorUser": "TESTCREATOR",
     "cyCreatorPassword": "password",
-    "cyTestArticleUrl": "node/15",
-    "cyTestArticle2Url": "node/16"
+    "cyTestArticleUrl": "/test-published",
+    "cyTestArticle2Url": "/test-unpublished"
   }
 }
