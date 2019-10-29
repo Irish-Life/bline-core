@@ -1,0 +1,8 @@
+uuid: 1439b56e-b905-4196-b227-6b2206e6a73d
+langcode: en
+status: true
+dependencies: {  }
+id: sidebar-menu
+label: 'Sidebar Menu'
+description: 'Main sidebar menu links'
+locked: false
