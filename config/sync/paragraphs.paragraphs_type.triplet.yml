@@ -1,9 +1,0 @@
-uuid: d934ba67-8737-4029-8ade-9d18ac07df69
-langcode: en
-status: true
-dependencies: {  }
-id: triplet
-label: Triplet
-icon_uuid: null
-description: 'Three part content section which allows three pieces of text, images and CTA buttons.'
-behavior_plugins: {  }

@@ -1,9 +1,0 @@
-definitions:
-  contact__site_page:
-    weight: -50
-    parent: 'menu_link_content:03d88ece-4f6f-4ed9-9cd3-b4aa38b91202'
-    menu_name: footer
-    enabled: false
-    expanded: false
-_core:
-  default_config_hash: o4bYR9ZupWb3AsOIizTUG4g-nu1mdJqA59UB7QT-ifQ
