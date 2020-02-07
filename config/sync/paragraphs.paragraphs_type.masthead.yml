@@ -1,9 +1,0 @@
-uuid: 16245b7e-3769-430d-9f58-6aa971e6d269
-langcode: en
-status: true
-dependencies: {  }
-id: masthead
-label: Masthead
-icon_uuid: null
-description: 'A large header component with title and subtitle.'
-behavior_plugins: {  }
