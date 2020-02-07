@@ -776,6 +776,9 @@ $settings['entity_update_backup'] = TRUE;
 
 $config_directories['sync'] = '../config/sync';
 
+if (file_exists('/var/www/site-php')) {
+  require '/var/www/site-php/s5e3be5fbe0f68/s5e3be5fbe0f68-settings.inc';
+}
 
 /**
  * Load local development override configuration, if available.
