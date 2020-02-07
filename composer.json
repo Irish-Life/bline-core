@@ -28,6 +28,7 @@
         "drupal/imagemagick": "^2.5",
         "drupal/paragraphs": "^1.8",
         "drupal/restui": "^1.17",
+        "drupal/tour_ui": "^1.0@beta",
         "drupal/twig_tweak": "^2.3",
         "drupal/typed_data": "^1.0@alpha",
         "drupal/workflow": "^1.1",
