@@ -23,13 +23,14 @@
         "drupal/admin_toolbar": "^1.27",
         "drupal/console": "^1.9",
         "drupal/core": "8.7.8",
-        "drupal/devel": "^2.1",
+        "drupal/devel": "^2",
         "drupal/duplicate_role": "^1.0",
         "drupal/imagemagick": "^2.5",
         "drupal/paragraphs": "^1.8",
         "drupal/restui": "^1.17",
         "drupal/tour_ui": "^1.0@beta",
         "drupal/twig_tweak": "^2.3",
+        "drupal/twig_vardumper": "^1.2",
         "drupal/typed_data": "^1.0@alpha",
         "drupal/workflow": "^1.1",
         "drush/drush": "^9.0.0",
@@ -41,6 +42,7 @@
         "zaporylie/composer-drupal-optimizations": "^1.0"
     },
     "require-dev": {
+        "symfony/var-dumper": "^4.4"
     },
     "conflict": {
         "drupal/drupal": "*"
