@@ -776,6 +776,9 @@ $settings['entity_update_backup'] = TRUE;
 
 $config_directories['sync'] = '../config/sync';
 
+if (file_exists('/var/www/site-php')) {
+  require '/var/www/site-php/s5e3be5fbe0f68/s5e3be5fbe0f68-settings.inc';
+}
 
 /**
  * Load local development override configuration, if available.
@@ -795,4 +798,9 @@ $config_directories['sync'] = '../config/sync';
 /**
  * Local settings
  */
-
+// Change kint maxLevels setting:
+include_once(DRUPAL_ROOT . '/modules/contrib/devel/kint/kint/Kint.class.php');
+if(class_exists('Kint')){
+  // Set the maxlevels to prevent out-of-memory. Currently there doesn't seem to be a cleaner way to set this:
+  Kint::$maxLevels = 4;
+}
