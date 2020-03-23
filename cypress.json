@@ -10,6 +10,12 @@
     "cyApproverUser": "TESTAPPROVER",
     "cyApproverPassword": "password",
     "cyTestArticleUrl": "/test-published",
-    "cyTestArticle2Url": "/test-unpublished"
+    "cyTestArticle2Url": "/test-unpublished",
+    "cyBrokersourceUser": "TESTBROKERSOURCE",
+    "cyBrokersourcePassword": "password",
+    "cyOnesourceUser": "TESTONESOURCE",
+    "cyOnesourcePassword": "password",
+    "cyCoreUser": "TESTCORE",
+    "cyCorePassword": "password"
   }
 }
