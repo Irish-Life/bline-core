@@ -27,6 +27,7 @@
         "drupal/duplicate_role": "^1.0",
         "drupal/imagemagick": "^2.5",
         "drupal/paragraphs": "^1.8",
+        "drupal/permissions_by_term": "^2.18",
         "drupal/restui": "^1.17",
         "drupal/tour_ui": "^1.0@beta",
         "drupal/twig_tweak": "^2.3",
