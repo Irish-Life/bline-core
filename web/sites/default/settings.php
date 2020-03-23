@@ -798,4 +798,9 @@ if (file_exists('/var/www/site-php')) {
 /**
  * Local settings
  */
-
+// Change kint maxLevels setting:
+include_once(DRUPAL_ROOT . '/modules/contrib/devel/kint/kint/Kint.class.php');
+if(class_exists('Kint')){
+  // Set the maxlevels to prevent out-of-memory. Currently there doesn't seem to be a cleaner way to set this:
+  Kint::$maxLevels = 4;
+}
