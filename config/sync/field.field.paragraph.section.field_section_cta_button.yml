@@ -1,0 +1,23 @@
+uuid: b95d5bf9-bf2b-4a62-862b-91901eb1fa82
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_section_cta_button
+    - paragraphs.paragraphs_type.section
+  module:
+    - link
+id: paragraph.section.field_section_cta_button
+field_name: field_section_cta_button
+entity_type: paragraph
+bundle: section
+label: 'Section CTA Button'
+description: 'A call to action to be added to the section paragraph type.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 1
+field_type: link

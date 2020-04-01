@@ -1,0 +1,33 @@
+uuid: 4849e036-247d-4d01-b322-2db8f1caccbd
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_tags
+    - node.type.event
+    - taxonomy.vocabulary.tags
+  content:
+    - 'taxonomy_term:tags:b36d701d-11a8-44a9-ba34-609ef09b5787'
+id: node.event.field_tags
+field_name: field_tags
+entity_type: node
+bundle: event
+label: Segment
+description: 'What segment is the event targeted at?'
+required: true
+translatable: true
+default_value:
+  -
+    target_uuid: b36d701d-11a8-44a9-ba34-609ef09b5787
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      tags: tags
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

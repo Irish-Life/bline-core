@@ -1,0 +1,9 @@
+uuid: 7702092b-46ed-4c38-8347-b1e915e36bdc
+langcode: en
+status: true
+dependencies: {  }
+id: section
+label: Section
+icon_uuid: null
+description: 'A generic, configurable section of the page. May have a mix of text and image content.'
+behavior_plugins: {  }

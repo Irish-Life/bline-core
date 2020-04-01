@@ -1,0 +1,20 @@
+uuid: 12c85f68-42e1-4009-b2ae-ad72cc60d0e1
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - bline
+id: messages
+theme: bline
+region: highlighted
+weight: 0
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: Messages
+  provider: system
+  label_display: '0'
+visibility: {  }

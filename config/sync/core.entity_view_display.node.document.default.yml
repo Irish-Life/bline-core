@@ -1,0 +1,38 @@
+uuid: ed4255e5-ded8-489e-8cd9-1c551d0149e5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.document.field_document
+    - field.field.node.document.field_tags
+    - node.type.document
+  module:
+    - user
+id: node.document.default
+targetEntityType: node
+bundle: document
+mode: default
+content:
+  field_document:
+    type: entity_reference_entity_view
+    weight: 102
+    label: above
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    region: content
+  field_tags:
+    weight: 103
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }

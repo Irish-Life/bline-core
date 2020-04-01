@@ -1,0 +1,9 @@
+uuid: 14d220a4-5283-4eee-a255-a8109cdac375
+langcode: en
+status: true
+dependencies: {  }
+id: onesource
+label: ONESOURCE
+weight: -6
+is_admin: null
+permissions: {  }

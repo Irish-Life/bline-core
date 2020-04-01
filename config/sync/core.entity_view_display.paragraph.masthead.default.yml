@@ -1,0 +1,30 @@
+uuid: 592d2665-2cd7-4c58-9800-2e829a842d47
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.masthead.field_masthead_heading
+    - field.field.paragraph.masthead.field_masthead_sub_heading
+    - paragraphs.paragraphs_type.masthead
+  module:
+    - text
+id: paragraph.masthead.default
+targetEntityType: paragraph
+bundle: masthead
+mode: default
+content:
+  field_masthead_heading:
+    weight: 0
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_masthead_sub_heading:
+    weight: 1
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+hidden: {  }

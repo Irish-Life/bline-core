@@ -1,0 +1,33 @@
+uuid: 37b621c1-e57b-48e4-a37c-c26b3074145f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_event_type
+    - node.type.event
+    - taxonomy.vocabulary.event_type
+  content:
+    - 'taxonomy_term:event_type:bda2d537-08bb-4362-913d-314be8f90082'
+id: node.event.field_event_type
+field_name: field_event_type
+entity_type: node
+bundle: event
+label: 'Event Type'
+description: 'What type of event is this?'
+required: true
+translatable: false
+default_value:
+  -
+    target_uuid: bda2d537-08bb-4362-913d-314be8f90082
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      event_type: event_type
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

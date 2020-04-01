@@ -1,0 +1,14 @@
+uuid: 8ef10e12-8163-4cbd-a1b7-23a79c6cc931
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.testcreator
+  module:
+    - user
+id: user_add_role_action.testcreator
+label: 'Add the TestCreator role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: testcreator

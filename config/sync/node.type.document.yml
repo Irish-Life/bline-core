@@ -1,0 +1,17 @@
+uuid: 015e4788-58c3-48bc-b524-3d6926468bd0
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: Document
+type: document
+description: 'A standard document type'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false

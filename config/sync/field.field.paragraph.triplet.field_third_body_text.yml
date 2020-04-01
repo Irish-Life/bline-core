@@ -1,0 +1,21 @@
+uuid: e5077221-93c7-4edc-bbda-b833d4cdd5b3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_third_body_text
+    - paragraphs.paragraphs_type.triplet
+  module:
+    - text
+id: paragraph.triplet.field_third_body_text
+field_name: field_third_body_text
+entity_type: paragraph
+bundle: triplet
+label: 'Third Body Text'
+description: 'Body text for the third item. Appears on the right hand side of the page by default.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

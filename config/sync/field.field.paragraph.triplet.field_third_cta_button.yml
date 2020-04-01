@@ -1,0 +1,23 @@
+uuid: f42e3d03-0635-48d1-9197-3cfd28ffe5a9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_third_cta_button
+    - paragraphs.paragraphs_type.triplet
+  module:
+    - link
+id: paragraph.triplet.field_third_cta_button
+field_name: field_third_cta_button
+entity_type: paragraph
+bundle: triplet
+label: 'Third CTA Button'
+description: 'Supply a url and some link content to generate a CTA button. Appears on the right side of the page by default.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 1
+field_type: link

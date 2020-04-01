@@ -1,0 +1,8 @@
+uuid: c0ad744a-63ac-4ba9-bd73-45b01a81cd81
+langcode: en
+status: true
+dependencies: {  }
+name: 'Event Type'
+vid: event_type
+description: 'Different types of events run for brokers'
+weight: 0

@@ -1,0 +1,9 @@
+uuid: f1c38445-4eb1-4951-94e4-0a55e8dfee1c
+langcode: en
+status: true
+dependencies: {  }
+id: core
+label: CORE
+weight: -4
+is_admin: null
+permissions: {  }

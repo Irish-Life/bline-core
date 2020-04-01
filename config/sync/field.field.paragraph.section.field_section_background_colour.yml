@@ -1,0 +1,23 @@
+uuid: 77922b19-91e4-4c5d-933a-44784d0a6189
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_section_background_colour
+    - paragraphs.paragraphs_type.section
+  module:
+    - options
+id: paragraph.section.field_section_background_colour
+field_name: field_section_background_colour
+entity_type: paragraph
+bundle: section
+label: 'Section Background Colour'
+description: 'Choose a background colour for this section.'
+required: false
+translatable: false
+default_value:
+  -
+    value: 6
+default_value_callback: ''
+settings: {  }
+field_type: list_integer

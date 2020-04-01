@@ -1,0 +1,21 @@
+uuid: 5733d6a3-0246-419d-8669-d752f2714d99
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_first_body_text
+    - paragraphs.paragraphs_type.triplet
+  module:
+    - text
+id: paragraph.triplet.field_first_body_text
+field_name: field_first_body_text
+entity_type: paragraph
+bundle: triplet
+label: 'First Body Text'
+description: 'Body text for the first item. Appears on the left hand side of the page by default.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

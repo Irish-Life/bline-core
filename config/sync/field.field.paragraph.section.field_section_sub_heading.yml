@@ -1,0 +1,21 @@
+uuid: 5a4fcd7c-baac-451c-9be3-c7d5e2b55e9f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_section_sub_heading
+    - paragraphs.paragraphs_type.section
+  module:
+    - text
+id: paragraph.section.field_section_sub_heading
+field_name: field_section_sub_heading
+entity_type: paragraph
+bundle: section
+label: 'Section Sub Heading'
+description: 'Additional supporting text for this section.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

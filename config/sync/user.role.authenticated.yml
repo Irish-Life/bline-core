@@ -1,0 +1,23 @@
+uuid: 9465d559-9e23-41c8-895f-ee7880cb65f1
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: btW6TFHajhy7Eo6YUvdFiPh4TcPggo8GBXYctjV6zag
+id: authenticated
+label: 'Authenticated user'
+weight: -9
+is_admin: false
+permissions:
+  - 'access comments'
+  - 'access content'
+  - 'access content overview'
+  - 'access shortcuts'
+  - 'access site-wide contact form'
+  - 'post comments'
+  - 'search content'
+  - 'skip comment approval'
+  - 'view media'
+  - 'view paragraph content masthead'
+  - 'view paragraph content section'
+  - 'view paragraph content triplet'

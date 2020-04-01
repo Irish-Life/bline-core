@@ -1,0 +1,23 @@
+uuid: b836d809-7a4d-41aa-ba18-880e802e26cc
+langcode: en
+status: false
+dependencies:
+  module:
+    - basic_auth
+    - hal
+    - node
+_core:
+  default_config_hash: t_jfECmZhJqBOJuSOFn87EOi_TWi-_fRYTuJgd19vgg
+id: entity.node
+plugin_id: 'entity:node'
+granularity: resource
+configuration:
+  methods:
+    - GET
+    - POST
+    - PATCH
+    - DELETE
+  formats:
+    - hal_json
+  authentication:
+    - basic_auth

@@ -1,0 +1,19 @@
+uuid: d3819019-59a1-44c1-85d1-1e50e8a2a545
+langcode: en
+status: true
+dependencies:
+  module:
+    - basic_auth
+    - bline_login
+    - serialization
+id: bline_login_resource
+plugin_id: bline_login_resource
+granularity: resource
+configuration:
+  methods:
+    - GET
+    - POST
+  formats:
+    - json
+  authentication:
+    - basic_auth

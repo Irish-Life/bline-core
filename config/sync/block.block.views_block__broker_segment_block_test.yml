@@ -1,0 +1,24 @@
+uuid: 99dedd9f-ce00-41f5-a95e-989fa13f7b26
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.broker_segment
+  module:
+    - views
+  theme:
+    - bline
+id: views_block__broker_segment_block_test
+theme: bline
+region: toprow
+weight: 0
+provider: null
+plugin: 'views_block:broker_segment-block_1'
+settings:
+  id: 'views_block:broker_segment-block_1'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+visibility: {  }

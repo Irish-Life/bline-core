@@ -1,0 +1,25 @@
+uuid: 0e95b32b-8718-4ee6-b6cc-1c9c61cfb0db
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:7df48f31-1106-45a7-91e8-48a95267d66f'
+  module:
+    - block_content
+  theme:
+    - bline
+id: disclaimertext
+theme: bline
+region: footer
+weight: -5
+provider: null
+plugin: 'block_content:7df48f31-1106-45a7-91e8-48a95267d66f'
+settings:
+  id: 'block_content:7df48f31-1106-45a7-91e8-48a95267d66f'
+  label: 'Disclaimer Text'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }
